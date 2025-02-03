@@ -170,11 +170,13 @@ arr2 = [10, 20, 8, 3, 4, 7, 6]  # ไม่เป็น Max Heap (20 > 10)
 
 print("True = เป็น Max-Heap\nFalse = ไม่เป็น Max-Heap\n")
 
-print(f"arr1 = {is_max_heap(arr1)}")
-print(f"arr2 = {is_max_heap(arr2)}")
+print(f"arr1 = {arr1}, Is it a max-heap? = {is_max_heap(arr1)}")
+print(f"arr2 = {arr2}, Is it a max-heap? = {is_max_heap(arr2)}")
+
+
 
 ```
-![image](https://github.com/user-attachments/assets/f4bc6b5d-bef6-4c06-84f5-4f9a5882932a)
+![image](https://github.com/user-attachments/assets/c02e0893-0dc2-4afb-9acd-3b6cd2f0cd0f)
 
 ## การประยุกต์ใช้งานจริง
 
