@@ -149,12 +149,32 @@ for i in range(3):
 จงเขียนฟังก์ชัน `is_max_heap(arr)` ที่รับ array เข้ามาและตรวจสอบว่าป็น Max Heap หรือไม่ 
 
 ```python
+def is_max_heap(arr):
+    n = len(arr)
+    
+    # ตรวจสอบทุก parent (i) ว่ามีค่ามากกว่าหรือเท่ากับลูกทั้งสอง
+    for i in range(n // 2):  # ตรวจเฉพาะ parent node เท่านั้น
+        left = 2 * i + 1  # ดัชนีลูกซ้าย
+        right = 2 * i + 2  # ดัชนีลูกขวา
 
+        if left < n and arr[i] < arr[left]:  # ตรวจสอบลูกซ้าย
+            return False
+        if right < n and arr[i] < arr[right]:  # ตรวจสอบลูกขวา
+            return False
 
+    return True
+
+# ทดสอบฟังก์ชัน
+arr1 = [10, 5, 8, 3, 4, 7, 6]  # เป็น Max Heap
+arr2 = [10, 20, 8, 3, 4, 7, 6]  # ไม่เป็น Max Heap (20 > 10)
+
+print("True = เป็น Max-Heap\nFalse = ไม่เป็น Max-Heap\n")
+
+print(f"arr1 = {is_max_heap(arr1)}")
+print(f"arr2 = {is_max_heap(arr2)}")
 
 ```
-[Capture รูปส่งตรงนี้]
-
+![image](https://github.com/user-attachments/assets/f4bc6b5d-bef6-4c06-84f5-4f9a5882932a)
 
 ## การประยุกต์ใช้งานจริง
 
