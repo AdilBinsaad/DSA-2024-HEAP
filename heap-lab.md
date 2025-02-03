@@ -79,9 +79,30 @@ def _sift_down(self, i):
 จงเขียนโปรแกรมเพื่อแทรกค่าต่อไปนี้ลงใน Max Heap ที่ว่างเปล่า: 5, 3, 8, 1, 2, 7, 6, 4
 พร้อมแสดงค่า Max Heap ที่ได้หลังจากเพิ่มข้อมูลครบแล้ว
 ```python
-code python
+import heapq
+
+class MaxHeap:
+    def __init__(self):
+        self.heap = []
+    
+    def insert(self, val):
+        heapq.heappush(self.heap, -val)  # ใช้ค่าเชิงลบเพื่อจำลอง Max Heap
+    
+    def display(self):
+        print("Max Heap:", [-val for val in self.heap])  # แปลงค่ากลับเป็นบวก
+
+# สร้าง Max Heap
+max_heap = MaxHeap()
+values = [5, 3, 8, 1, 2, 7, 6, 4]
+
+# แทรกค่าลงใน Max Heap
+for val in values:
+    max_heap.insert(val)
+
+# แสดงผลลัพธ์ของ Max Heap
+max_heap.display()
 ```
-[Capture รูปส่งตรงนี้]
+![image](https://github.com/user-attachments/assets/5d17f644-f2c7-49e1-b9b7-41d1b412d654)
 
 ### แบบฝึกหัดที่ 2: การลบค่า
 จากข้อ 1 จงเขียนลำดับการลบค่าสูงสุดออกจาก Heap จำนวน 3 ครั้ง แสดงข้อมูล Heap หลังจากลบแต่ละครั้ง
