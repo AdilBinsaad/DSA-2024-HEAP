@@ -108,14 +108,6 @@ max_heap.display()
 จากข้อ 1 จงเขียนลำดับการลบค่าสูงสุดออกจาก Heap จำนวน 3 ครั้ง แสดงข้อมูล Heap หลังจากลบแต่ละครั้ง
 
 ```python
-code python
-```
-![image](https://github.com/user-attachments/assets/3998105b-3c4a-4243-be4f-901bf171b30a)
-
-### แบบฝึกหัดที่ 3: การเขียนโปรแกรม
-จงเขียนฟังก์ชัน `is_max_heap(arr)` ที่รับ array เข้ามาและตรวจสอบว่าป็น Max Heap หรือไม่ 
-
-```python
 import heapq
 
 class MaxHeap:
@@ -150,6 +142,14 @@ for i in range(3):
     max_value = max_heap.delete_max()
     print(f"\nลบค่ามากที่สุด: {max_value}")
     max_heap.display()
+```
+![image](https://github.com/user-attachments/assets/3998105b-3c4a-4243-be4f-901bf171b30a)
+
+### แบบฝึกหัดที่ 3: การเขียนโปรแกรม
+จงเขียนฟังก์ชัน `is_max_heap(arr)` ที่รับ array เข้ามาและตรวจสอบว่าป็น Max Heap หรือไม่ 
+
+```python
+
 
 
 ```
