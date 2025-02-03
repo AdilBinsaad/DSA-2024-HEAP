@@ -209,7 +209,8 @@ er.add_patient(Patient("คนไข้ B", 3))  # ปวดท้อง
 er.add_patient(Patient("คนไข้ C", 2))  # กระดูกหัก
 ```
 
-[Capture รูปผลการทดลองส่งตรงนี้]
+![image](https://github.com/user-attachments/assets/d3e6c268-7f34-4bab-ade3-943c23248ca7)
+
 
 ### 2. ระบบแนะนำสินค้าขายดี (Top K Items)
 ```python
