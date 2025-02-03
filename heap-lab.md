@@ -236,7 +236,8 @@ ranking.update_sales("สินค้า B", 150)
 ranking.update_sales("สินค้า C", 80)
 ranking.update_sales("สินค้า D", 200)
 ```
-[Capture รูปผลการทดลองส่งตรงนี้]
+![Uploading image.png…]()
+
 
 ### 3. ตัวอย่างระบบคิวธนาคาร แบบมีระดับความสำคัญ โดยใช้ heapq
 ```python 
