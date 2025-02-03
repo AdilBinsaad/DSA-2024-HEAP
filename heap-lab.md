@@ -358,4 +358,8 @@ if __name__ == "__main__":
 ```python
 code python
 ```
-[Capture รูปส่งตรงนี้]
+![image](https://github.com/user-attachments/assets/4f7086d1-abb4-454c-b9f6-6a656e029094)
+
+![image](https://github.com/user-attachments/assets/55ce2a5c-b029-48e0-956b-71c4c0194c54)
+
+
