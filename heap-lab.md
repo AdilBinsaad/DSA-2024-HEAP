@@ -110,13 +110,48 @@ max_heap.display()
 ```python
 code python
 ```
-[Capture รูปส่งตรงนี้]
+![image](https://github.com/user-attachments/assets/3998105b-3c4a-4243-be4f-901bf171b30a)
 
 ### แบบฝึกหัดที่ 3: การเขียนโปรแกรม
 จงเขียนฟังก์ชัน `is_max_heap(arr)` ที่รับ array เข้ามาและตรวจสอบว่าป็น Max Heap หรือไม่ 
 
 ```python
-code python
+import heapq
+
+class MaxHeap:
+    def __init__(self):
+        self.heap = []
+    
+    def insert(self, val):
+        heapq.heappush(self.heap, -val)  # ใช้ค่าเชิงลบเพื่อจำลอง Max Heap
+    
+    def delete_max(self):
+        if self.heap:
+            return -heapq.heappop(self.heap)  # ลบและคืนค่ามากที่สุด
+        return None  # ถ้า Heap ว่าง
+    
+    def display(self):
+        print("Max Heap:", [-val for val in self.heap])  # แปลงค่ากลับเป็นบวก
+
+# สร้าง Max Heap
+max_heap = MaxHeap()
+values = [5, 3, 8, 1, 2, 7, 6, 4]
+
+# แทรกค่าลงใน Max Heap
+for val in values:
+    max_heap.insert(val)
+
+# แสดงค่า Heap หลังจากแทรกข้อมูลครบ
+print("Heap ก่อนลบค่า:")
+max_heap.display()
+
+# ลบค่ามากที่สุด 3 ครั้ง และแสดงผลลัพธ์แต่ละครั้ง
+for i in range(3):
+    max_value = max_heap.delete_max()
+    print(f"\nลบค่ามากที่สุด: {max_value}")
+    max_heap.display()
+
+
 ```
 [Capture รูปส่งตรงนี้]
 
